@@ -6,47 +6,7 @@ export default function DashboardContent() {
     <div className="pr-4 pt-4 pb-4 space-y-3 h-screen text-right">
       {/* Orders Section */}
       <div className="h-80 p-6 bg-rose-100 dark:bg-rose-900/30 rounded-[40px] inline-flex justify-start items-end gap-3 overflow-auto w-full">
-        {/* Ordens Abertas */}
-        <div className="w-48 p-6 bg-stone-400 dark:bg-stone-600 rounded-3xl inline-flex flex-col justify-center items-start gap-6 flex-shrink-0">
-          <div className="inline-flex justify-start items-center gap-2">
-            <ClipboardList className="w-5 h-5 text-black" />
-            <div className="text-black dark:text-white text-sm font-normal" data-testid="text-orders-open">Abertas</div>
-          </div>
-          <div className="self-stretch inline-flex justify-between items-center">
-            <div className="text-black dark:text-white text-2xl font-semibold" data-testid="text-orders-open-count">1200</div>
-            <div className="w-8 h-8 relative bg-white rounded-2xl flex items-center justify-center">
-              <TrendingUp className="w-4 h-4 text-black" />
-            </div>
-          </div>
-        </div>
-
-        {/* Ordens Em Execução */}
-        <div className="w-48 p-6 bg-stone-400 dark:bg-stone-600 rounded-3xl inline-flex flex-col justify-center items-start gap-6 flex-shrink-0">
-          <div className="inline-flex justify-start items-center gap-2">
-            <Zap className="w-5 h-5 text-black" />
-            <div className="text-black dark:text-white text-sm font-normal whitespace-nowrap" data-testid="text-orders-execution">Em Execução</div>
-          </div>
-          <div className="self-stretch inline-flex justify-between items-center">
-            <div className="text-black dark:text-white text-2xl font-semibold" data-testid="text-orders-execution-count">980</div>
-            <div className="w-8 h-8 relative bg-white rounded-2xl flex items-center justify-center">
-              <TrendingUp className="w-4 h-4 text-black" />
-            </div>
-          </div>
-        </div>
-
-        {/* Ordens Finalizadas */}
-        <div className="w-48 p-6 bg-stone-400 dark:bg-stone-600 rounded-3xl inline-flex flex-col justify-center items-start gap-6 flex-shrink-0">
-          <div className="inline-flex justify-start items-center gap-2">
-            <CheckCircle2 className="w-5 h-5 text-black" />
-            <div className="text-black dark:text-white text-sm font-normal" data-testid="text-orders-finished">Finalizadas</div>
-          </div>
-          <div className="self-stretch inline-flex justify-between items-center">
-            <div className="text-black dark:text-white text-2xl font-semibold" data-testid="text-orders-finished-count">730</div>
-            <div className="w-8 h-8 relative bg-white rounded-2xl flex items-center justify-center">
-              <TrendingUp className="w-4 h-4 text-black" />
-            </div>
-          </div>
-        </div>
+        {/* Empty for now or other content */}
       </div>
       {/* Services Section */}
       <div 
@@ -55,9 +15,49 @@ export default function DashboardContent() {
         <div 
           className="flex-1 grid grid-cols-2 grid-rows-2 gap-3"
         >
-          <div className="w-full h-full p-2.5 bg-red-100 rounded-[40px]" />
-          <div className="w-full h-full p-2.5 bg-red-100 rounded-[40px]" />
-          <div className="w-full h-full p-2.5 bg-red-100 rounded-[40px]" />
+          {/* Ordens Abertas */}
+          <div className="w-full h-full p-6 bg-stone-400 dark:bg-stone-600 rounded-[40px] inline-flex flex-col justify-center items-start gap-6">
+            <div className="inline-flex justify-start items-center gap-2">
+              <ClipboardList className="w-5 h-5 text-black" />
+              <div className="text-black dark:text-white text-sm font-normal" data-testid="text-orders-open">Abertas</div>
+            </div>
+            <div className="self-stretch inline-flex justify-between items-center">
+              <div className="text-black dark:text-white text-2xl font-semibold" data-testid="text-orders-open-count">1200</div>
+              <div className="w-8 h-8 relative bg-white rounded-2xl flex items-center justify-center">
+                <TrendingUp className="w-4 h-4 text-black" />
+              </div>
+            </div>
+          </div>
+
+          {/* Ordens Em Execução */}
+          <div className="w-full h-full p-6 bg-stone-400 dark:bg-stone-600 rounded-[40px] inline-flex flex-col justify-center items-start gap-6">
+            <div className="inline-flex justify-start items-center gap-2">
+              <Zap className="w-5 h-5 text-black" />
+              <div className="text-black dark:text-white text-sm font-normal whitespace-nowrap" data-testid="text-orders-execution">Em Execução</div>
+            </div>
+            <div className="self-stretch inline-flex justify-between items-center">
+              <div className="text-black dark:text-white text-2xl font-semibold" data-testid="text-orders-execution-count">980</div>
+              <div className="w-8 h-8 relative bg-white rounded-2xl flex items-center justify-center">
+                <TrendingUp className="w-4 h-4 text-black" />
+              </div>
+            </div>
+          </div>
+
+          {/* Ordens Finalizadas */}
+          <div className="w-full h-full p-6 bg-stone-400 dark:bg-stone-600 rounded-[40px] inline-flex flex-col justify-center items-start gap-6">
+            <div className="inline-flex justify-start items-center gap-2">
+              <CheckCircle2 className="w-5 h-5 text-black" />
+              <div className="text-black dark:text-white text-sm font-normal" data-testid="text-orders-finished">Finalizadas</div>
+            </div>
+            <div className="self-stretch inline-flex justify-between items-center">
+              <div className="text-black dark:text-white text-2xl font-semibold" data-testid="text-orders-finished-count">730</div>
+              <div className="w-8 h-8 relative bg-white rounded-2xl flex items-center justify-center">
+                <TrendingUp className="w-4 h-4 text-black" />
+              </div>
+            </div>
+          </div>
+
+          {/* Empty Card */}
           <div className="w-full h-full p-2.5 bg-red-100 rounded-[40px]" />
         </div>
         <div className="flex-1 p-8 bg-red-100 rounded-[40px] flex flex-col justify-start items-start gap-40 overflow-hidden">

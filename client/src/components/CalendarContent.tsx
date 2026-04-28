@@ -342,9 +342,10 @@ export default function CalendarContent() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50/50 dark:bg-gray-900/20">
+    <div className="pt-4 pb-4 pr-4 h-screen">
+      <div className="h-full bg-white/90 backdrop-blur-sm rounded-[36px] shadow-lg p-6 overflow-auto">
       {/* Header */}
-      <div className="flex items-center justify-between gap-4 p-6 pb-0">
+      <div className="flex items-center justify-between gap-4 mb-6">
         <h1 
           className="text-2xl font-semibold text-gray-800 dark:text-gray-100 tracking-tight"
           data-testid="text-calendar-title"
@@ -364,7 +365,7 @@ export default function CalendarContent() {
       </div>
 
       {/* Controls Bar */}
-      <div className="flex items-center justify-between gap-4 px-6 py-4 border-b border-gray-200 dark:border-gray-700">
+      <div className="flex items-center justify-between gap-4 py-4 border-b border-gray-200 dark:border-gray-700 mb-6">
         <div className="flex items-center gap-2">
           {/* Navigation Buttons */}
           <Button
@@ -462,7 +463,7 @@ export default function CalendarContent() {
       </div>
 
       {/* Calendar Grid */}
-      <div className="p-6">
+      <div className="mb-6">
         <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
           {/* Weekday Headers */}
           <div className="grid grid-cols-7 border-b border-gray-200 dark:border-gray-700">
@@ -699,6 +700,7 @@ export default function CalendarContent() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
+      </div>
     </div>
   );
 }

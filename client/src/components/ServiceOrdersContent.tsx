@@ -333,7 +333,8 @@ export default function ServiceOrdersContent() {
   const isSomeSelected = selectedOrders.length > 0;
 
   return (
-    <div className="p-6 min-h-screen bg-muted/30">
+    <div className="pt-4 pb-4 pr-4 h-screen">
+      <div className="h-full bg-white/90 backdrop-blur-sm rounded-[36px] shadow-lg p-6 overflow-auto">
       {/* Page Header */}
       <div className="mb-6">
         <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
@@ -726,6 +727,7 @@ export default function ServiceOrdersContent() {
           </div>
         )}
       </Card>
+      </div>
     </div>
   );
 }

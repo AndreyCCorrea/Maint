@@ -273,7 +273,8 @@ export default function QuotesContent() {
   };
 
   return (
-    <div className="p-6 min-h-screen bg-[#F8F9FA] dark:bg-background">
+    <div className="pt-4 pb-4 pr-4 h-screen">
+      <div className="h-full bg-white/90 backdrop-blur-sm rounded-[36px] shadow-lg p-6 overflow-auto">
       <div className="max-w-[1400px] mx-auto">
         {/* Header */}
         <div className="mb-6">
@@ -631,6 +632,7 @@ export default function QuotesContent() {
             </div>
           </div>
         )}
+      </div>
       </div>
     </div>
   );

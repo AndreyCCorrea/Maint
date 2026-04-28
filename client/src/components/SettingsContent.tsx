@@ -150,7 +150,8 @@ export default function SettingsContent() {
   const [timezone, setTimezone] = useState("sao_paulo");
 
   return (
-    <div className="h-full overflow-y-auto bg-gray-50 dark:bg-gray-900">
+    <div className="pt-4 pb-4 pr-4 h-screen">
+      <div className="h-full bg-white/90 backdrop-blur-sm rounded-[36px] shadow-lg overflow-y-auto">
       <div className="p-6 max-w-[800px] mx-auto">
         <div className="mb-8">
           <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight mb-2" data-testid="text-settings-title">
@@ -313,6 +314,7 @@ export default function SettingsContent() {
             />
           </SettingsCard>
         </div>
+      </div>
       </div>
     </div>
   );
